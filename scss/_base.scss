@@ -1,0 +1,94 @@
+//------------Обнуление------------
+// Обнуляем отступы и границы для всех элементов на странице.
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+// Все элементы и их псевдоэлементы включают в свой размер значения полей и границ.
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+// Убираем линии обводки у некоторых браузеров.
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+// Элементы по умолчанию будут отображаться как блочные.
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+// Уравнивает поведение шрифтов и элементов для разных браузеров.
+// Также запрещает самовольное увеличение шрифта (например на IPhone).
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+// Семейство шрифта наследуются от родительского элемента.
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+// Убирает крестик в input у Internet Explorer.
+input::-ms-clear {
+	display: none;
+}
+// Делает вид курсора "Указатель" для всех кнопок.
+button {
+	background: inherit;
+	cursor: pointer;
+}
+// Убирает лишние отступы у кнопок в FireFox.
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+// Запрещаем изменять размер текстового поля
+textarea {
+	resize: none;
+}
+// Убирает у ссылок подчёркивание.
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+// Убирает маркер у маркированного списка.
+ul li {
+	list-style: none;
+}
+// Не до конца понимаю зачем это. =(
+img {
+	vertical-align: top;
+}
+// Размер шрифта и его толщина наследуются от родительского элемента.
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
